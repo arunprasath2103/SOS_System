@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="function.js"></script> -->
+    <link rel="icon" href="siren.png">
+    <title>SOS Emergency</title>
+</head>
+<body style="background-color: #FAF3E0;">
+    <nav id="navigation">
+        <img src="menu-burger.png" alt="menu" onclick="menu_bar()">
+        <img src="user (1).png" alt="Profile" onclick="profile()">
+    </nav>
+    <center>
+        <div id="heading">
+            <h1 id="sos">SOS</h1>
+            <h3 id="emergency">Emergency</h3>
+        </div>
+        <div id="image">
+            <img src="sos (2).gif" alt="SOS" id="sos_img">
+        </div>
+        <div id="input_div">
+            <input type="text" placeholder="Mobile Number" id="num_in">
+            <div style="padding-top: 20px;">
+                <!-- <button onclick="send_location()" id="send_btn">Get Location</button> -->
+                <button onclick="popup_box();send_location()" id="share_btn">Start sharing</button>
+            </div>
+        </div>
+        <div id="popup_div"></div>
+        <div id="msg_div">
+            <div id="inner_msgdiv">
+                <img src="output-onlinegiftools.gif" alt="Tick" style="width: 50px; height: 50px;">
+                <h1 id="alert_msg">Your information is successfully sharing.</h1>
+                <div id="btn_div">
+                    <button id="ok_btn" onclick="return_main()">Okay</button>
+                    <button id="info_btn" onclick="show_info()"><strong>Details</strong></button>
+                </div>
+            </div>
+            <div id="loc_div">
+                <h1>Location</h1>
+                <h2 id="lati">Latitude : </h2>
+                <h2 id="longi">Longitude : </h2>
+                <h3 id="lati_longi">Location : </h3>
+                <a href=""></a>
+                <button id="back_btn" onclick="back_menu()">Back</button>
+            </div>
+        </div>
+        <script src="function.js"></script>
+    </center>
+</body>
+</html>
